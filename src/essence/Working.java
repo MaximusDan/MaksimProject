@@ -1,28 +1,52 @@
+package essence;
+
 public class Working {
 
-    public String name = "";
+    public String name;
     public int age;
     public String work;
     public String department;
     public int money;
     public int yearsWorking;
+    public BankCard card;
 
-    public static void createWorking(){
-        Working workingMan = new Working();
-        workingMan.name = "Максим";
-        workingMan.age = 20;
-        workingMan.work = "Прогер";
-        workingMan.department = "Java";
-        workingMan.money = 1000;
-        workingMan.yearsWorking = 5;
-        workingMan.showFirstWorking();
+    public  void createWorking(){
+
+        name = "Максим";
+        age = 20;
+        work = "Прогер";
+        department = "Java";
+        money = 1000;
+        yearsWorking = 5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*this.showFirstWorking();
 
         Working workingMan2 = new Working();
         workingMan2.name = "Петя";
         workingMan2.work = "Прогер";
         workingMan2.department = "Java";
         workingMan2.yearsWorking = 5;
-        workingMan2.lookWorkingMan2();
+        workingMan2.lookWorkingMan2();*/
 
     }
 
@@ -30,7 +54,7 @@ public class Working {
 
 
 
-    public void lookWorkingMan2() {
+    /*public void lookWorkingMan2() {
         if(this.name == null || this.name== " " ){
             System.out.println("Имени у данного челика нет");
         }else{
@@ -67,7 +91,7 @@ public class Working {
 
 
     public void showFirstWorking() {
-        System.out.println("Working{" +
+        System.out.println("essence.Working{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", work='" + work + '\'' +
@@ -76,7 +100,7 @@ public class Working {
                 ", yearsWorking=" + yearsWorking +
                 '}');
         System.out.println();
-
-    }
+*
+    }*/
 
 }

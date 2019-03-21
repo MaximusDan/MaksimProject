@@ -9,15 +9,16 @@ public class Main {
         Working workingMan = new Working(); //создаем рабочего
         Services.createWorking(workingMan);   //заполняем его данные
 
-        workingMan.card = new BankCard(); //№2создаем карточку рабочего (предварительно карту сделали параметром класса Working)
+        workingMan.card = new BankCard(); //№2 создаем карточку рабочего (предварительно карту сделали параметром класса Working)
         Services.createCard(workingMan.card);  //заполняем карту
 
-        //Working workingMan2 = new Working(); //создаем 2 рабочего
+        Working workingMan2 = new Working(); //создаем 2 рабочего
+        Services.createCard2(workingMan2); //№3.1 метод принимает рабочего и заполняет его карту если ее нет
 
-        //Services.test(workingMan); //метод принимает рабочего и заполняет его карту
-        //BankCard.test(workingMan2.card);
+        Services.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде
 
-        //System.out.println(workingMan.card.balance);
-        //System.out.println(workingMan.card.nameCard);
+
+        //System.out.println(workingMan2.card.balance);
+        System.out.println(workingMan.card.numberCard);
     }
 }

@@ -1,21 +1,21 @@
 import entity.BankCard;
 import entity.Working;
-import services.Services;
-
+import services.ServicesWorking;
+import services.ServisesBankCard;
 public class Main {
     public static void main (String[]args){
 
 
         Working workingMan = new Working(); //создаем рабочего
-        Services.createWorking(workingMan);   //заполняем его данные
+        ServicesWorking.createWorking(workingMan);   //заполняем его данные
 
         workingMan.card = new BankCard(); //№2 создаем карточку рабочего (предварительно карту сделали параметром класса Working)
-        Services.createCard(workingMan.card);  //заполняем карту
+        ServisesBankCard.createCard(workingMan.card);  //заполняем карту
 
         Working workingMan2 = new Working(); //создаем 2 рабочего
-        Services.createCard2(workingMan2); //№3.1 метод принимает рабочего и заполняет его карту если ее нет
+        ServisesBankCard.createCard2(workingMan2); //№3.1 метод принимает рабочего и заполняет его карту если ее нет
 
-        Services.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде
+        ServisesBankCard.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде
 
 
         //System.out.println(workingMan2.card.balance);

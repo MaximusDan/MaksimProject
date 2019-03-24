@@ -1,19 +1,8 @@
 package services;
-
 import entity.BankCard;
 import entity.Working;
 
-public class Services {
-
-    public static void createWorking(Working working) {
-
-        working.name = "Максим";
-        working.age = 20;
-        working.work = "Прогер";
-        working.department = "Java";
-        working.money = 1000;
-        working.yearsWorking = 5;
-    }
+public class ServisesBankCard {
 
     public static void createCard(BankCard workingCard) {
 
@@ -36,13 +25,12 @@ public class Services {
         }
     }
 
-    public static BankCard remakeNumberCard(BankCard newNumber) {
+    public static void remakeNumberCard(BankCard newNumber) {
 
         char[] mass = newNumber.numberCard.toCharArray();
         for (int i = 6; i < mass.length - 4; i++) {
             mass[i] = 42;
         }
         newNumber.numberCard = newNumber.numberCard.valueOf(mass);
-        return newNumber;
     }
 }

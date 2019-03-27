@@ -10,18 +10,14 @@ public class Working {
     public int yearsWorking;
     public BankCard card;
 
-    public Working(String name, int age) {
+    public Working(String name, int age, String work, String department, int money, int yearsWorking) {
         this.name = name;
         this.age = age;
-    }
+        this.work = work;
+        this.department = department;
+        this.money = money;
+        this.yearsWorking = yearsWorking;
 
-    public Working(int age, String name) {
-    }
-
-    public Working(int money) {
-    }
-
-    public Working(double money) {
     }
 
 }

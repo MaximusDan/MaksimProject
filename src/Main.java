@@ -2,12 +2,18 @@ import entity.BankCard;
 import entity.Working;
 import services.ServicesWorking;
 import services.ServisesBankCard;
+import storage.Collection;
+
+import java.util.ArrayList;
+
 public class Main {
     public static void main (String[]args){
 
-        Working w = new Working("Vasya", 23);
+        Collection.test(); // Умение гуглить #5
 
-        Working w2 = new Working(4);
+
+
+        //СТАРЫЕ ЗАДАНИЯ
 
         /*Working workingMan = new Working(); //создаем рабочего
         ServicesWorking.createWorking(workingMan);   //заполняем его данные
@@ -19,10 +25,7 @@ public class Main {
         ServicesWorking.createWorking(workingMan2);
         ServisesBankCard.createCard2(workingMan2); //№3.1 метод принимает рабочего и заполняет его карту если ее нет
 
-        ServisesBankCard.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде
+        ServisesBankCard.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде*/
 
-
-        //System.out.println(workingMan2.card.balance);
-        System.out.println(workingMan.card.numberCard);*/
     }
 }

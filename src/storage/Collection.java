@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import entity.Working;
 
 public class Collection {
+    public static ArrayList<Working> people1 = new ArrayList<Working>();
 
     public static ArrayList<Working> people = new ArrayList<Working>() {{
         add(new Working("Вася",23,"прогер","Java",1000,3));
@@ -11,13 +12,11 @@ public class Collection {
         add(new Working("Миша",20,"прогер","Java",500,3));
         add(new Working("Даша",23,"тестер","Javascript",1000,1));
         add(new Working("Маша",22,"тестер","Java",500,7));
-        add(new Working("Максим",21,"прогер","Javascript",1000,3);
-        add(new Working("Юра",26,"прогер","Javascript",1000,5);
-        add(new Working("Серый",23,"прогер","Java",500,3);
-        add(new Working("Вася",25,"тестер","Java",1000,4);
+        add(new Working("Максим",21,"прогер","Javascript",1000,3));
+        add(new Working("Юра",26,"прогер","Javascript",1000,5));
+        add(new Working("Серый",23,"прогер","Java",500,3));
+        add(new Working("Вася",25,"тестер","Java",1000,4));
     }};
-
-    public static ArrayList<Working> people1 = new ArrayList<Working>();
 
     public static void test(){
 
@@ -43,4 +42,17 @@ public class Collection {
         people1.add(working9);
         people1.add(working10);
     }
+
+
+    /*public static void test1() {
+        ArrayList<Double> List = new ArrayList<Double>();
+
+        List.add(3.14);
+        List.add(2.14);
+        List.add(5.8);
+
+        List.remove((Double) 5.8);
+
+        System.out.println(List);
+    }*/
 }

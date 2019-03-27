@@ -9,9 +9,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main (String[]args){
 
-        Collection.test(); // Умение гуглить #5
+        //Collection.test(); // Умение гуглить #5
 
-
+        //Collection.test1();
 
         //СТАРЫЕ ЗАДАНИЯ
 
@@ -27,5 +27,7 @@ public class Main {
 
         ServisesBankCard.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде*/
 
+        System.out.println(Collection.people);
+        System.out.println(Collection.people1);
     }
 }

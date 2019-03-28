@@ -27,7 +27,7 @@ public class Main {
 
         ServisesBankCard.remakeNumberCard(workingMan.card); //№3.2 метод, который принимает карту и возвращает её номер в маскированном виде*/
 
-        System.out.println(Collection.people);
-        System.out.println(Collection.people1);
+        //System.out.println(Collection.people);
+        //System.out.println(Collection.people1);
     }
 }

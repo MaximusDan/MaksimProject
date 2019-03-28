@@ -1,9 +1,9 @@
 package storage;
 import java.util.ArrayList;
 import entity.Working;
+import entity.BankCard;
 
 public class Collection {
-    public static ArrayList<Working> people1 = new ArrayList<Working>();
 
     public static ArrayList<Working> people = new ArrayList<Working>() {{
         add(new Working("Вася",23,"прогер","Java",1000,3));
@@ -18,6 +18,24 @@ public class Collection {
         add(new Working("Вася",25,"тестер","Java",1000,4));
     }};
 
+
+    public static ArrayList<BankCard> peopleBankCard = new ArrayList<BankCard>() {{
+        add(new BankCard(234.4,"11223344","зарплатная",true,"09875324"));
+        add(new BankCard(999.4,"11223345","зарплатная",false,"09876345"));
+        add(new BankCard(888.4,"11223346","зарплатная",true,"098765"));
+        add(new BankCard(347548.5,"11223347","зарплатная",false,"0987654"));
+        add(new BankCard(575.4,"11223348","зарплатная",true,"09876543"));
+        add(new BankCard(212434.4,"11223354","зарплатная",true,"09873"));
+        add(new BankCard(4566.557,"11223558","зарплатная",false,"098734"));
+        add(new BankCard(2456.2,"11223359","зарплатная",true,"0987345"));
+        add(new BankCard(258634.45,"11223357","зарплатная",true,"09873455"));
+        add(new BankCard(29784.4,"11223355","зарплатная",false,"0987234"));
+
+    }};
+
+
+    /* Старые задания
+    public static ArrayList<Working> people1 = new ArrayList<Working>();
     public static void test(){
 
     Working working1 = new Working("Вася",23,"прогер","Java",1000,3);
@@ -41,18 +59,8 @@ public class Collection {
         people1.add(working8);
         people1.add(working9);
         people1.add(working10);
-    }
-
-
-    /*public static void test1() {
-        ArrayList<Double> List = new ArrayList<Double>();
-
-        List.add(3.14);
-        List.add(2.14);
-        List.add(5.8);
-
-        List.remove((Double) 5.8);
-
-        System.out.println(List);
     }*/
+
+
+
 }

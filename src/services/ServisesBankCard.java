@@ -13,7 +13,7 @@ public class ServisesBankCard {
         workingCard.pin = "1234";
     }
 
-    public static void createCard2(Working working2) {
+   /* public static void createCard2(Working working2) {
         if (working2.card == null) {//если карты нет
             working2.card = new BankCard();
 
@@ -23,7 +23,7 @@ public class ServisesBankCard {
             working2.card.opportunities = false;
             working2.card.pin = "12345";
         }
-    }
+    }*/
 
     public static void remakeNumberCard(BankCard newNumber) {
 

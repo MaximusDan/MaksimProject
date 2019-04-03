@@ -9,6 +9,7 @@ public class Working {
     public int money;
     public int yearsWorking;
     public BankCard card;
+    public String id;
 
     public Working(String name, int age, String work, String department, int money, int yearsWorking) {
         this.name = name;
@@ -19,5 +20,6 @@ public class Working {
         this.yearsWorking = yearsWorking;
 
     }
+
 
 }

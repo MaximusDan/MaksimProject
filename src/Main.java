@@ -2,6 +2,8 @@ import entity.BankCard;
 import entity.Working;
 import services.ServicesWorking;
 import services.ServisesBankCard;
+import services.GenerationId;
+
 import storage.Collection;
 
 import java.util.ArrayList;
@@ -9,6 +11,10 @@ import java.util.ArrayList;
 public class Main {
     public static void main (String[]args){
 
+
+        //GenerationId.createId(); //тестировал метод createId
+
+        //Working.qqq();
         //Collection.test(); // Умение гуглить #5
 
         //Collection.test1();
@@ -29,5 +35,6 @@ public class Main {
 
         //System.out.println(Collection.people);
         //System.out.println(Collection.people1);
+
     }
 }

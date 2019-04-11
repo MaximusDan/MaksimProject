@@ -34,6 +34,7 @@ public class Collection {
     }};
 
 
+
     /* Старые задания
     public static ArrayList<Working> people1 = new ArrayList<Working>();
     public static void test(){

@@ -1,7 +1,6 @@
 package dao;
 import entity.Working;
 import storage.Collection;
-import static storage.Collection.people;
 import java.util.Scanner;
 
 public class DaoWorking {
@@ -9,32 +8,31 @@ public class DaoWorking {
 
     /*МЕТОД ДОБАВЛЯЮЩИЙ ОБЪЕКТ В ХРАНИЛИЩЕ*/
     public static void addNewWorkingCollection(Working newWorking){
-        people.add(newWorking);
+        Collection.people.add(newWorking);
     }
 
     /*МЕТОД УДАЛЯЮЩИЙ ОБЪЕКТ ИЗ ХРАНИЛИЩА ПО ИНДЕНТИФИКАТОРУ*/
-    public static void deleteWorkingCollection(){
-        System.out.println("Введите номер ID обьктакта,который Вы хотите удалить");
-        Scanner scan = new Scanner(System.in);
-        String number = scan.nextLine();
-
-        for(int i = 0; i < people.size(); i++){
-            if(people.id.equals(number) = true){
-                people.remove(i);
+    public static void deleteWorkingCollection(String id) {
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (Collection.people.get(i).id.equals(id)) {
+                Collection.people.remove(i);
             }
         }
     }
 
-    /*МЕТОД ДОСТАЮЩИЙ ОБЪЕКТ ИЗ ХРАНИЛИЩА ПО ИНДЕНТИФИКАТОРУ*/
-    public static void takeWorkingCollection(){
-        System.out.println("Введите номер ID обьктакта,который Вы хотите достать");
-        Scanner scan = new Scanner(System.in);
-        String number = scan.nextLine();
+    /*МЕТОД УДАЛЯЮЩИЙ ОБЪЕКТ ИЗ ХРАНИЛИЩА*/
+    public static void deleteWorkingCollection(Working object) {
+        Collection.people.remove(object);
+    }
 
-        for(int i = 0; i < people.size(); i++) {
-            if (people.id.equals(number)) {
-                return people(i);
+    /*МЕТОД ДОСТАЮЩИЙ ОБЪЕКТ ИЗ ХРАНИЛИЩА ПО ИНДЕНТИФИКАТОРУ*/
+    public static Working takeWorkingCollection(String id) {
+
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (Collection.people.get(i).id.equals(id)) {
+                return Collection.people.get(i);
             }
         }
+        return null;
     }
 }

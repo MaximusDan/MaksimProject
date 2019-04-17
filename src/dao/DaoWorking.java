@@ -8,6 +8,7 @@ public class DaoWorking {
 
     /*МЕТОД ДОБАВЛЯЮЩИЙ ОБЪЕКТ В ХРАНИЛИЩЕ*/
     public static void addNewWorkingCollection(Working newWorking){
+
         Collection.people.add(newWorking);
     }
 
@@ -22,6 +23,7 @@ public class DaoWorking {
 
     /*МЕТОД УДАЛЯЮЩИЙ ОБЪЕКТ ИЗ ХРАНИЛИЩА*/
     public static void deleteWorkingCollection(Working object) {
+
         Collection.people.remove(object);
     }
 
@@ -34,5 +36,19 @@ public class DaoWorking {
             }
         }
         return null;
+    }
+
+    /*МЕТОД КОТОРЫЙ ЗАМЕНЯЕТ ОДИН ОБЪЕКТ В КОЛЛЕКЦИИ ДРУГИМ ПО ИНДЕНТИФИКАТОРУ*/
+    public static void replaceWorking(Working object) {
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (object.id.equals(Collection.people.get(i).id)) {
+                Collection.people.get(i).name = object.name;
+                Collection.people.get(i).age = object.age;
+                Collection.people.get(i).department = object.department;
+                Collection.people.get(i).money = object.money;
+                Collection.people.get(i).yearsWorking = object.yearsWorking;
+                Collection.people.get(i).card = object.card;
+            }
+        }
     }
 }

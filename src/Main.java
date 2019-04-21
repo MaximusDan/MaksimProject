@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main (String[]args){
 
-        Working w = DaoWorking.takeWorkingCollection("54645");
+        /*Working w = DaoWorking.takeWorkingCollection("54645");
 
         if(w == null){
             System.out.println("ok");

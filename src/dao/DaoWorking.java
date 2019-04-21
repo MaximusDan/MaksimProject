@@ -1,10 +1,12 @@
 package dao;
+import entity.BankCard;
 import entity.Working;
 import storage.Collection;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DaoWorking {
-
 
     /*МЕТОД ДОБАВЛЯЮЩИЙ ОБЪЕКТ В ХРАНИЛИЩЕ*/
     public static void addNewWorkingCollection(Working newWorking){
@@ -50,5 +52,41 @@ public class DaoWorking {
                 Collection.people.get(i).card = object.card;
             }
         }
+    }
+
+    /*МЕТОД КОТОРЫЙ ВОЗВРАЩАЕТ СПИСОК ВСЕХ РАБОЧИХ У КОТОРЫХ НЕТ КАРТЫ №10*/
+    public static ArrayList<Working> returnListWorkingWithNullCard() {
+        ArrayList<Working> newWorking = new ArrayList<>();
+
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (Collection.people.get(i).card == null) {
+                newWorking.add(Collection.people.get(i));
+            }
+        }
+        return newWorking;
+    }
+
+    /*МЕТОД КОТОРЫЙ ВОЗВРАЩАЕТ СПИСОК ВСЕХ РАБОЧИХ У КОТОРЫХ КАРТЫ С НУЛЕВЫМ БАЛАНСОМ №10*/
+    public static ArrayList<Working> returnListWorkingWithNullBallanceCard() {
+        ArrayList<Working> newWorking = new ArrayList<>();
+
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (Collection.people.get(i).card.balance == 0) {
+                newWorking.add(Collection.people.get(i));
+            }
+        }
+        return newWorking;
+    }
+
+    /*МЕТОД КОТОРЫЙ ВОЗВРАЩАЕТ СПИСОК ВСЕХ РАБОЧИХ У КОТОРЫХ СУММА НА БАЛАНСЕ БОЛЬШЕ ЧЕМ ЧИСЛО ПЕРЕДАННОЕ В МЕТОД №10*/
+    public static ArrayList<Working> returnListWorking(double number) {
+        ArrayList<Working> newWorking = new ArrayList<>();
+
+        for (int i = 0; i < Collection.people.size(); i++) {
+            if (Collection.people.get(i).card.balance > number) {
+                newWorking.add(Collection.people.get(i));
+            }
+        }
+        return newWorking;
     }
 }

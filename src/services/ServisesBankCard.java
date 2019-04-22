@@ -25,12 +25,12 @@ public class ServisesBankCard {
         }
     }*/
 
-    public static void remakeNumberCard(BankCard newNumber) {
+    public static BankCard remakeNumberCard(BankCard newNumber) {
 
         char[] mass = newNumber.numberCard.toCharArray();
         for (int i = 6; i < mass.length - 4; i++) {
             mass[i] = 42;
         }
-        newNumber.numberCard = newNumber.numberCard.valueOf(mass);
+        return newNumber;
     }
 }

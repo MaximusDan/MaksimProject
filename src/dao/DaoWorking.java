@@ -71,7 +71,7 @@ public class DaoWorking {
         ArrayList<Working> newWorking = new ArrayList<>();
 
         for (int i = 0; i < Collection.people.size(); i++) {
-            if (Collection.people.get(i).card.balance == 0) {
+            if(Collection.people.get(i).card != null && Collection.people.get(i).card.balance == 0){
                 newWorking.add(Collection.people.get(i));
             }
         }
@@ -83,7 +83,7 @@ public class DaoWorking {
         ArrayList<Working> newWorking = new ArrayList<>();
 
         for (int i = 0; i < Collection.people.size(); i++) {
-            if (Collection.people.get(i).card.balance > number) {
+            if (Collection.people.get(i).card != null && Collection.people.get(i).card.balance > number) {
                 newWorking.add(Collection.people.get(i));
             }
         }

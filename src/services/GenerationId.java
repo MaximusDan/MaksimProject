@@ -9,18 +9,14 @@ public class GenerationId {
         char[] massChar = new char[40];
         for (int i = 0; i < massChar.length; i++) {
             rand = (int) (Math.random() * 2) + 1;
-            if (rand == 1) {
+            if (rand == 1) {            //если число равно 1 то генерируется рандомная цифра
                 result = (int) (Math.random() * 10) + 48;
                 massChar[i] = (char) result;
-            }
-            if (rand == 2) {
+            } else {                       //если число не равно 1 то генерируется рандомная буква
                 result = (int) (Math.random() * 26) + 97;
                 massChar[i] = (char) result;
             }
         }
-        String id = String.valueOf(massChar); //преобраз массив чаров в строку
-        System.out.println(id);
-
-        return id;
+        return String.valueOf(massChar); //преобраз массив чаров в строку и возвращаем
     }
 }

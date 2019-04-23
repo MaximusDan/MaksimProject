@@ -1,27 +1,26 @@
 package services;
 import entity.BankCard;
-import entity.Working;
 
 public class ServisesBankCard {
 
-    public static void createCard(BankCard workingCard) {
+    public static void createCard(BankCard userCard) {
 
-        workingCard.balance = 1000.0;
-        workingCard.numberCard = "1sdheshdzacsr2346asdcsrv";
-        workingCard.nameCard = "Альфа-банк";
-        workingCard.opportunities = true;
-        workingCard.pin = "1234";
+        userCard.balance = 1000.0;
+        userCard.numberCard = "1sdheshdzacsr2346asdcsrv";
+        userCard.nameCard = "Альфа-банк";
+        userCard.opportunities = true;
+        userCard.pin = "1234";
     }
 
-   /* public static void createCard2(Working working2) {
-        if (working2.card == null) {//если карты нет
-            working2.card = new BankCard();
+   /* public static void createCard2(User user2) {
+        if (user2.card == null) {//если карты нет
+            user2.card = new BankCard();
 
-            working2.card.balance = 500.0;
-            working2.card.numberCard = "2";
-            working2.card.nameCard = "БелИнвестБанк";
-            working2.card.opportunities = false;
-            working2.card.pin = "12345";
+            user2.card.balance = 500.0;
+            user2.card.numberCard = "2";
+            user2.card.nameCard = "БелИнвестБанк";
+            user2.card.opportunities = false;
+            user2.card.pin = "12345";
         }
     }*/
 

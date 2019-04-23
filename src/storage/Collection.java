@@ -1,21 +1,22 @@
 package storage;
 import java.util.ArrayList;
-import entity.Working;
+
+import entity.User;
 import entity.BankCard;
 
 public class Collection {
 
-    public static ArrayList<Working> people = new ArrayList<Working>() {{
-        add(new Working("Вася",23,"прогер","Java",1000,3));
-        add(new Working("Петя",22,"тестер","Javascript",500,5));
-        add(new Working("Гриша",21,"прогер","Javascript",1000,2));
-        add(new Working("Миша",20,"прогер","Java",500,3));
-        add(new Working("Даша",23,"тестер","Javascript",1000,1));
-        add(new Working("Маша",22,"тестер","Java",500,7));
-        add(new Working("Максим",21,"прогер","Javascript",1000,3));
-        add(new Working("Юра",26,"прогер","Javascript",1000,5));
-        add(new Working("Серый",23,"прогер","Java",500,3));
-        add(new Working("Вася",25,"тестер","Java",1000,4));
+    public static ArrayList<User> people = new ArrayList<User>() {{
+        add(new User("Вася",23,"прогер","Java",1000,3,"Lomak123","Zrhenzrhen145"));
+        add(new User("Петя",22,"тестер","Javascript",500,5,"Llomallomak123","Zrhen145"));
+        add(new User("Гриша",21,"прогер","Javascript",1000,2,"Klon1234","Zrhen145156"));
+        add(new User("Миша",20,"прогер","Java",500,3,"Klonklon1234","Zrhen1"));
+        add(new User("Даша",23,"тестер","Javascript",1000,1,"Zaken1234","Zrhenzrhen1"));
+        add(new User("Маша",22,"тестер","Java",500,7,"Zakenzaken1234","Zrhenzrhenzrhen1"));
+        add(new User("Максим",21,"прогер","Javascript",1000,3,"Qwerty123","Zrhenzrhenzrhen1"));
+        add(new User("Юра",26,"прогер","Javascript",1000,5,"Qwertyqwerty123","Zrhenzrhenzrhen12"));
+        add(new User("Серый",23,"прогер","Java",500,3,"Troxtrox123","Zrhenzrhenzrhen145"));
+        add(new User("Вася",25,"тестер","Java",1000,4,"Trox123","Zrhenzrhenzrhen145156"));
     }};
 
 
@@ -36,19 +37,19 @@ public class Collection {
 
 
     /* Старые задания
-    public static ArrayList<Working> people1 = new ArrayList<Working>();
+    public static ArrayList<User> people1 = new ArrayList<User>();
     public static void test(){
 
-    Working working1 = new Working("Вася",23,"прогер","Java",1000,3);
-    Working working2 = new Working("Петя",22,"тестер","Javascript",500,5);
-    Working working3 = new Working("Гриша",21,"прогер","Javascript",1000,2);
-    Working working4 = new Working("Миша",20,"прогер","Java",500,3);
-    Working working5 = new Working("Даша",23,"тестер","Javascript",1000,1);
-    Working working6 = new Working("Маша",22,"тестер","Java",500,7);
-    Working working7 = new Working("Максим",21,"прогер","Javascript",1000,3);
-    Working working8 = new Working("Юра",26,"прогер","Javascript",1000,5);
-    Working working9 = new Working("Серый",23,"прогер","Java",500,3);
-    Working working10 = new Working("Вася",25,"тестер","Java",1000,4);
+    User working1 = new User("Вася",23,"прогер","Java",1000,3);
+    User working2 = new User("Петя",22,"тестер","Javascript",500,5);
+    User working3 = new User("Гриша",21,"прогер","Javascript",1000,2);
+    User working4 = new User("Миша",20,"прогер","Java",500,3);
+    User working5 = new User("Даша",23,"тестер","Javascript",1000,1);
+    User working6 = new User("Маша",22,"тестер","Java",500,7);
+    User working7 = new User("Максим",21,"прогер","Javascript",1000,3);
+    User working8 = new User("Юра",26,"прогер","Javascript",1000,5);
+    User working9 = new User("Серый",23,"прогер","Java",500,3);
+    User working10 = new User("Вася",25,"тестер","Java",1000,4);
 
         people1.add(working1);
         people1.add(working2);

@@ -1,6 +1,9 @@
+import authorization.Authorization;
+
 public class Main {
     public static void main (String[]args){
 
+        Authorization.pusk();
         /*User w = DaoUser.takeWorkingCollection("54645");
 
         if(w == null){
